@@ -10,3 +10,5 @@
 4. Build the basic skeleton
 5. Data pre-processing
 6. Make predictions based on input from the website
+
+### Website link: [a link](https://nhemapriya.github.io/Math-O-Mania/)
