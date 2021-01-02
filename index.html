@@ -1,0 +1,44 @@
+<html lang='en'>
+
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <link rel='stylesheet' href='css/styles.css'>
+  <link rel="icon" href="logo.jpg" type="image/jpg">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap'>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+  <script src="draw.js"></script>
+  <script src="process.js"></script>
+  <script src="question.js"></script>
+  <script src="OpenCv/opencv.js"></script>
+ 
+</head>
+
+<body>
+
+  <div class='container'>
+    <h1 id="title"> Math 'O' Mania </h1>
+    <h2 id='question'><span id='n1'>3</span> <span id="op"> + </span> <span id='n2'>2</span> = </h2>
+    <canvas id="can" width="150" height="130">
+
+    </canvas>
+
+  </div>
+
+  <div class='container'>
+    <button id='checkAnswer' class='btn' value='Check'> Check </button>
+  </div>
+</body>
+  
+  <script>
+    loading();
+    prepareCanvas();
+    nextQuestion();
+
+    document.getElementById('checkAnswer').addEventListener('click', function (){
+      check();
+      clear();
+      nextQuestion();
+    });
+  </script>
+</html>
