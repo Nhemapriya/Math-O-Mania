@@ -6,3 +6,6 @@
 
 1. Build an MNIST model(for handwritten digits)
 2. Save and load the model
+3. Deploy to browser
+4. Build the basic skeleton
+5. Data pre-processing
